@@ -1,26 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import InitialPage from "./pages/Initial";
+import LoadingPage from "./pages/Loading";
+import LoadedPage from "./pages/Loaded";
+import Gotcha from "./components/Gotcha";
+import Fullscreen from "./components/Fullscreen";
+import {Reset as ResetCSS} from 'styled-reset'
+import {DefaultTheme, ThemeProvider} from "styled-components";
+import DEFAULT_THEME from './themes/default';
+import DARK_THEME from './themes/dark';
+import DarkModeDetector, {DarkMode} from "./components/DarkModeDetector";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface State {
+  theme: DefaultTheme;
+}
+
+class App extends Component<{}, State> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      theme: DEFAULT_THEME
+    };
+
+    this.onDarkModeDetected = this.onDarkModeDetected.bind(this);
+  }
+
+  onDarkModeDetected(darkMode: DarkMode) {
+    this.setState({
+      theme: darkMode === 'dark' ? DARK_THEME : DEFAULT_THEME
+    });
+  }
+
+  render() {
+    const createInitialPage = (onStartLoading: () => void) => (
+        <InitialPage onStartLoading={onStartLoading}/>
+    );
+    const loadingPage = (<LoadingPage/>);
+    const loadedPage = (<LoadedPage/>);
+
+    return (
+        <React.Fragment>
+          <ResetCSS/>
+          <DarkModeDetector onDarkModeDetected={this.onDarkModeDetected}/>
+
+          <ThemeProvider theme={this.state.theme}>
+            <Fullscreen>
+              <Gotcha creatInitial={createInitialPage}
+                      loading={loadingPage}
+                      loaded={loadedPage}
+              />
+            </Fullscreen>
+          </ThemeProvider>
+        </React.Fragment>
+    );
+  }
 }
 
 export default App;
