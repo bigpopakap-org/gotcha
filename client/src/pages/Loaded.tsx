@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Centerer from "../components/Centerer";
-import PageLayout from "./Layout";
-import {GotchaResult} from "../shared";
+import Centerer from "components/Centerer";
+import PageLayout from "pages/Layout";
+import {GotchaResult} from "shared";
 
 interface Props {
   currentGotchaResult: GotchaResult;

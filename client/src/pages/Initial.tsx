@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Centerer from "../components/Centerer";
-import PageLayout from "./Layout";
+import Centerer from "components/Centerer";
+import PageLayout from "pages/Layout";
 
 interface Props {
   onStartLoading: () => void
