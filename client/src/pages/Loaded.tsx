@@ -2,40 +2,22 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import Centerer from "../components/Centerer";
 import PageLayout from "./Layout";
-import {GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult} from "../shared";
+import {GotchaResult} from "../shared";
 
-interface State {
-  gotchaResult: GotchaResult;
+interface Props {
+  currentGotchaResult: GotchaResult;
 }
 
 const StyledPage = styled(PageLayout)`
   background: ${props => props.theme.colors.success};
 `;
 
-function getGotchaResult() : GotchaResult {
-  const queryParams = new URLSearchParams(window.location.search);
-
-  if (queryParams.has(GOTCHA_RESULT_QUERY_PARAM_NAME)) {
-    const gotchaResultParam = queryParams.get(GOTCHA_RESULT_QUERY_PARAM_NAME);
-    return isGotchaResult(gotchaResultParam) ? gotchaResultParam : 'lose';
-  } else {
-    return 'lose';
-  }
-}
-
-export default class LoadedPage extends Component<{}, State> {
-  constructor(props: {}) {
-    super(props);
-    this.state = {
-      gotchaResult: getGotchaResult()
-    };
-  }
-
+export default class LoadedPage extends Component<Props, {}> {
   render() {
     return (
         <StyledPage>
           <Centerer horizontal vertical>
-            {this.state.gotchaResult}
+            {this.props.currentGotchaResult}
           </Centerer>
         </StyledPage>
     )
