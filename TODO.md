@@ -1,2 +1,3 @@
+- get everything to restart when @gotcha/shared package is updated
 - move stylelintrc configurations to an stylelint-bigpopakap plugin
 - fix DefaultTheme ESlint not-found error: https://github.com/alexgorbatchev/eslint-import-resolver-typescript

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Reset as ResetCSS } from 'styled-reset';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
+import { GotchaResult, GOTCHA_RESULT_QUERY_PARAM_NAME, isGotchaResult } from '@gotcha/shared';
 
 import InitialPage from 'pages/Initial';
 import LoadingPage from 'pages/Loading';
@@ -10,7 +11,6 @@ import Fullscreen from 'components/Fullscreen';
 import DEFAULT_THEME from 'themes/default';
 import DARK_THEME from 'themes/dark';
 import DarkModeDetector, { DarkMode } from 'components/DarkModeDetector';
-import { GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult } from 'shared/shared';
 
 interface State {
   theme: DefaultTheme;

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { GotchaResult } from '@gotcha/shared';
 
 import Centerer from 'components/Centerer';
 import PageLayout from 'pages/Layout';
-import { GotchaResult } from 'shared/shared';
 
 interface Props {
   currentGotchaResult: GotchaResult;
