@@ -3,9 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm run install:client",
+    "postinstall": "npm-run-all install:client",
     "install:client": "cd client && npm install",
-    "start": "npm run start:client",
-    "start:client": "cd client && npm start"
+    "start": "npm-run-all start:client",
+    "start:client": "cd client && npm start",
+    "build": "npm-run-all build:client",
+    "build:client": "cd client && npm build",
+    "test": "npm-run-all test:client",
+    "test:client": "cd client && npm test",
+    "lint": "npm-run-all lint:client",
+    "lint:fix": "npm-run-all lint:client:fix",
+    "lint:client": "cd client && npm run lint",
+    "lint:client:fix": "cd client && npm run lint:fix"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

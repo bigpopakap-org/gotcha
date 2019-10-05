@@ -1,0 +1,2 @@
+- move stylelintrc configurations to an stylelint-bigpopakap plugin
+- use npm-run-all in the project's package.json
