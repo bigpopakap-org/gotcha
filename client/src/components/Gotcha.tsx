@@ -1,13 +1,13 @@
-import React, {Component, ReactNode} from 'react';
+import { Component, ReactNode } from 'react';
 
 interface Props {
-  creatInitial: (onStartLoading: () => void) => ReactNode,
-  loading: ReactNode,
-  loaded: ReactNode
+  creatInitial: (onStartLoading: () => void) => ReactNode;
+  loading: ReactNode;
+  loaded: ReactNode;
 }
 
 interface State {
-  state: 'initial' | 'loading' | 'loaded'
+  state: 'initial' | 'loading' | 'loaded';
 }
 
 export default class Gotcha extends Component<Props, State> {
@@ -40,11 +40,11 @@ export default class Gotcha extends Component<Props, State> {
   render() {
     return (() => {
       switch (this.state.state) {
-        case "initial":
+        case 'initial':
           return this.props.creatInitial(this.startLoading);
-        case "loading":
+        case 'loading':
           return this.props.loading;
-        case "loaded":
+        case 'loaded':
           return this.props.loaded;
       }
     })();

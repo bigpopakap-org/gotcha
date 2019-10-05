@@ -1,2 +1,2 @@
 - move stylelintrc configurations to an stylelint-bigpopakap plugin
-- use npm-run-all in the project's package.json
+- fix DefaultTheme ESlint not-found error: https://github.com/alexgorbatchev/eslint-import-resolver-typescript

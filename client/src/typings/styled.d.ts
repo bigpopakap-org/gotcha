@@ -1,15 +1,15 @@
 // import original module declarations
-import 'styled-components'
+import 'styled-components';
 
 // and extend them!
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      brand: string,
-      background: string,
-      error: string,
-      success: string,
-      text: string
-    }
+      brand: string;
+      background: string;
+      error: string;
+      success: string;
+      text: string;
+    };
   }
 }

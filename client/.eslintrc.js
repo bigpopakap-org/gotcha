@@ -1,10 +1,7 @@
 module.exports = {
   extends: [
-    'bigpopakap/base'
+    'bigpopakap/react'
   ],
-  parserOptions: {
-    project: './tsconfig.json'
-  },
   settings: {
     "import/resolver": {
       node: {

@@ -1,19 +1,20 @@
-import React, {Component} from 'react';
-import InitialPage from "pages/Initial";
-import LoadingPage from "pages/Loading";
-import LoadedPage from "pages/Loaded";
-import Gotcha from "components/Gotcha";
-import Fullscreen from "components/Fullscreen";
-import {Reset as ResetCSS} from 'styled-reset'
-import {DefaultTheme, ThemeProvider} from "styled-components";
+import React, { Component } from 'react';
+import { Reset as ResetCSS } from 'styled-reset';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
+
+import InitialPage from 'pages/Initial';
+import LoadingPage from 'pages/Loading';
+import LoadedPage from 'pages/Loaded';
+import Gotcha from 'components/Gotcha';
+import Fullscreen from 'components/Fullscreen';
 import DEFAULT_THEME from 'themes/default';
 import DARK_THEME from 'themes/dark';
-import DarkModeDetector, {DarkMode} from "components/DarkModeDetector";
-import {GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult} from "shared";
+import DarkModeDetector, { DarkMode } from 'components/DarkModeDetector';
+import { GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult } from 'shared/shared';
 
 interface State {
   theme: DefaultTheme;
-  currentGotchaResult: GotchaResult
+  currentGotchaResult: GotchaResult;
 }
 
 function getGotchaResult(): GotchaResult {
@@ -52,24 +53,23 @@ class App extends Component<{}, State> {
   }
 
   render() {
-    const createInitialPage = (onStartLoading: () => void) => <InitialPage onStartLoading={onStartLoading}/>;
-    const loadingPage = <LoadingPage currentGotchaResult={this.state.currentGotchaResult}/>;
-    const loadedPage = <LoadedPage currentGotchaResult={this.state.currentGotchaResult}/>;
+    const createInitialPage = (onStartLoading: () => void) => (
+      <InitialPage onStartLoading={onStartLoading} />
+    );
+    const loadingPage = <LoadingPage currentGotchaResult={this.state.currentGotchaResult} />;
+    const loadedPage = <LoadedPage currentGotchaResult={this.state.currentGotchaResult} />;
 
     return (
-        <React.Fragment>
-          <ResetCSS/>
-          <DarkModeDetector onDarkModeDetected={this.onDarkModeDetected}/>
+      <React.Fragment>
+        <ResetCSS />
+        <DarkModeDetector onDarkModeDetected={this.onDarkModeDetected} />
 
-          <ThemeProvider theme={this.state.theme}>
-            <Fullscreen>
-              <Gotcha creatInitial={createInitialPage}
-                      loading={loadingPage}
-                      loaded={loadedPage}
-              />
-            </Fullscreen>
-          </ThemeProvider>
-        </React.Fragment>
+        <ThemeProvider theme={this.state.theme}>
+          <Fullscreen>
+            <Gotcha creatInitial={createInitialPage} loading={loadingPage} loaded={loadedPage} />
+          </Fullscreen>
+        </ThemeProvider>
+      </React.Fragment>
     );
   }
 }

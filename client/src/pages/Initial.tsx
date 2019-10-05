@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import Centerer from "components/Centerer";
-import PageLayout from "pages/Layout";
+
+import Centerer from 'components/Centerer';
+import PageLayout from 'pages/Layout';
 
 interface Props {
-  onStartLoading: () => void
+  onStartLoading: () => void;
 }
 
 const StyledPage = styled(PageLayout)`
@@ -14,14 +15,14 @@ const StyledPage = styled(PageLayout)`
 export default class InitialPage extends Component<Props, {}> {
   render() {
     return (
-        <StyledPage>
-          <Centerer horizontal vertical>
-            <Centerer horizontal>
-              <h1>Welcome!</h1>
-              <button onClick={this.props.onStartLoading}>Start Tetris!</button>
-            </Centerer>
+      <StyledPage>
+        <Centerer horizontal vertical>
+          <Centerer horizontal>
+            <h1>Welcome!</h1>
+            <button onClick={this.props.onStartLoading}>Start Tetris!</button>
           </Centerer>
-        </StyledPage>
+        </Centerer>
+      </StyledPage>
     );
   }
 }

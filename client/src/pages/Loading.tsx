@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import Centerer from "components/Centerer";
-import PageLayout from "pages/Layout";
-import {GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult} from "shared";
+
+import Centerer from 'components/Centerer';
+import PageLayout from 'pages/Layout';
+import { GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult } from 'shared/shared';
 
 interface Props {
   currentGotchaResult: GotchaResult;
@@ -14,13 +15,13 @@ function advanceGotchaResult(currentGotchaResult: GotchaResult): void {
   // Calculate the next gotchaResult to set
   const nextGotchaResult = (() => {
     switch (currentGotchaResult) {
-      case "lose":
+      case 'lose':
         return 'extra-try';
-      case "extra-try":
+      case 'extra-try':
         return 'gotcha-win';
-      case "gotcha-win":
+      case 'gotcha-win':
         return 'share';
-      case "share":
+      case 'share':
         return 'share';
       default:
         return 'lose';
@@ -43,11 +44,11 @@ export default class LoadingPage extends Component<Props, {}> {
 
   render() {
     return (
-        <StyledPage>
-          <Centerer horizontal vertical>
-            Loading...
-          </Centerer>
-        </StyledPage>
-    )
+      <StyledPage>
+        <Centerer horizontal vertical>
+          Loading...
+        </Centerer>
+      </StyledPage>
+    );
   }
 }

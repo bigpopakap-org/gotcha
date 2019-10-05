@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 export type DarkMode = 'dark' | 'light';
 
 interface Props {
-  onDarkModeDetected: (darkMode: DarkMode) => void
+  onDarkModeDetected: (darkMode: DarkMode) => void;
 }
 
 class DarkModeDetector extends Component<Props, {}> {
@@ -15,13 +15,16 @@ class DarkModeDetector extends Component<Props, {}> {
   componentDidMount(): void {
     const queryParams = new URLSearchParams(window.location.search);
 
-    if (queryParams.has('darkMode') && (queryParams.get('darkMode') === 'true' || queryParams.get('darkMode') === 'false')) {
+    if (
+      queryParams.has('darkMode') &&
+      (queryParams.get('darkMode') === 'true' || queryParams.get('darkMode') === 'false')
+    ) {
       // Let the query param override the theme requested by the browser
       this.props.onDarkModeDetected(queryParams.get('darkMode') === 'true' ? 'dark' : 'light');
     } else {
       // Detect changes to the requested color scheme
-      window.matchMedia("(prefers-color-scheme: dark)").addListener(this.onColorSchemeChanged);
-      window.matchMedia("(prefers-color-scheme: light)").addListener(this.onColorSchemeChanged);
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(this.onColorSchemeChanged);
+      window.matchMedia('(prefers-color-scheme: light)').addListener(this.onColorSchemeChanged);
 
       // Calculate the current color scheme
       this.onColorSchemeChanged();
@@ -36,8 +39,8 @@ class DarkModeDetector extends Component<Props, {}> {
 
   onColorSchemeChanged() {
     // Check what mode is active right now
-    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches;
 
     if (isDarkMode) {
       this.props.onDarkModeDetected('dark');

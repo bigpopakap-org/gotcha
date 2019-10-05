@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import Centerer from "components/Centerer";
-import PageLayout from "pages/Layout";
-import {GotchaResult} from "shared";
+
+import Centerer from 'components/Centerer';
+import PageLayout from 'pages/Layout';
+import { GotchaResult } from 'shared/shared';
 
 interface Props {
   currentGotchaResult: GotchaResult;
@@ -15,11 +16,11 @@ const StyledPage = styled(PageLayout)`
 export default class LoadedPage extends Component<Props, {}> {
   render() {
     return (
-        <StyledPage>
-          <Centerer horizontal vertical>
-            {this.props.currentGotchaResult}
-          </Centerer>
-        </StyledPage>
-    )
+      <StyledPage>
+        <Centerer horizontal vertical>
+          {this.props.currentGotchaResult}
+        </Centerer>
+      </StyledPage>
+    );
   }
 }
