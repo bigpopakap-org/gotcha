@@ -26,6 +26,7 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
+    "@gotcha/shared": "file:../shared",
     "express": "^4.17.1"
   }
 }
