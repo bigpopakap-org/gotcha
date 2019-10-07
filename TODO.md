@@ -1,3 +1,13 @@
 - get everything to restart when @gotcha/shared package is updated
+- encode the pageVisit number so it's not obvious in the URL
 - move stylelintrc configurations to an stylelint-bigpopakap plugin
+- disallow reaching deep into the @gotcha/shared package?
 - fix DefaultTheme ESlint not-found error: https://github.com/alexgorbatchev/eslint-import-resolver-typescript
+- mixpanel funnels to know how far people get
+    - iteration1 - visit
+    - iteration1 - spin
+    - iteration1 - saw result
+    - iteration1 - share
+    - ... iteration2, iteration3, etc. ...
+- tests and greenkeeper (auto-merge greenkeeper branches)
+- autodeployed staging env and manual production env (useful to make sure greenkeeper updates worked)
