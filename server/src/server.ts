@@ -12,5 +12,5 @@ server.get('*', (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log('gotcha server listening on port ${PORT}');
+  console.log(`gotcha server listening on port ${PORT}`);
 });
