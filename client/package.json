@@ -2,16 +2,8 @@
   "name": "@gotcha/client",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@gotcha/shared": "file:../shared",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0",
-    "styled-components": "^4.4.0",
-    "styled-reset": "^4.0.1",
-    "typescript": "3.6.3"
-  },
   "devDependencies": {
+    "@gotcha/shared": "file:../shared",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.11",
     "@types/react": "16.9.5",
@@ -24,11 +16,17 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-typescript": "^0.14.0",
     "prettier": "^1.18.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.0",
+    "styled-reset": "^4.0.1",
     "stylelint": "^11.0.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^3.1.1",
-    "stylelint-processor-styled-components": "^1.8.0"
+    "stylelint-processor-styled-components": "^1.8.0",
+    "typescript": "3.6.3"
   },
   "scripts": {
     "dev": "react-scripts start",

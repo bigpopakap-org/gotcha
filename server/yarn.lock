@@ -18,6 +18,9 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@gotcha/client@file:../client":
+  version "0.1.0"
+
 "@gotcha/shared@file:../shared":
   version "0.1.0"
 

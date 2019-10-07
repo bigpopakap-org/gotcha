@@ -5,10 +5,12 @@ const PORT = process.env.PORT || 3001;
 
 const server = express();
 
-server.get('/', (req, res) => {
-  res.send(`Hello World!?${GOTCHA_RESULT_QUERY_PARAM_NAME}=false`);
+server.use('/', express.static('node_modules/@gotcha/client/build'));
+
+server.get('*', (req, res) => {
+  res.redirect('/');
 });
 
 server.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}! 🚀`);
+  console.log('gotcha server listening on port ${PORT}');
 });
