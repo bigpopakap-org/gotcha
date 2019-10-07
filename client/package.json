@@ -29,7 +29,6 @@
     "typescript": "3.6.3"
   },
   "scripts": {
-    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "npm-run-all -c lint:js lint:css",
@@ -37,8 +36,7 @@
     "lint:js": "yarn eslint --ext json,js,jsx,ts,d.ts,tsx ./",
     "lint:js:fix": "yarn lint:js --fix",
     "lint:css": "yarn stylelint src/**/*.{js,jsx,ts,tsx}",
-    "lint:css:fix": "yarn lint:css --fix",
-    "eject": "react-scripts eject"
+    "lint:css:fix": "yarn lint:css --fix"
   },
   "browserslist": {
     "production": [

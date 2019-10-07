@@ -6,24 +6,28 @@
     "node": ">=10.16"
   },
   "scripts": {
-    "postinstall": "npm-run-all -c install:shared install:client",
+    "postinstall": "npm-run-all -c install:shared install:client install:server",
     "install:shared": "cd shared && yarn install",
     "install:client": "cd client && yarn install",
-    "dev": "npm-run-all --parallel dev:server dev:client",
+    "install:server": "cd server && yarn install",
+    "dev": "npm-run-all --parallel dev:server",
     "dev:server": "cd server && yarn dev",
-    "dev:client": "cd client && yarn dev",
-    "build": "npm-run-all -c build:shared build:client",
+    "build": "npm-run-all -c build:shared build:client build:server",
     "build:shared": "cd shared && yarn build",
     "build:client": "cd client && yarn build",
-    "test": "npm-run-all -c test:shared test:client",
+    "build:server": "cd server && yarn build",
+    "test": "npm-run-all -c test:shared test:client test:server",
     "test:shared": "cd shared && yarn test",
     "test:client": "cd client && yarn test",
-    "lint": "npm-run-all -c lint:shared lint:client",
-    "lint:fix": "npm-run-all -c lint:shared:fix lint:client:fix",
+    "test:server": "cd server && yarn test",
+    "lint": "npm-run-all -c lint:shared lint:client lint:server",
+    "lint:fix": "npm-run-all -c lint:shared:fix lint:client:fix lint:server:fix",
     "lint:shared": "cd shared && yarn lint",
     "lint:shared:fix": "cd shared && yarn lint:fix",
     "lint:client": "cd client && yarn lint",
-    "lint:client:fix": "cd client && yarn lint:fix"
+    "lint:client:fix": "cd client && yarn lint:fix",
+    "lint:server": "cd server && yarn lint",
+    "lint:server:fix": "cd server && yarn lint:fix"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"
