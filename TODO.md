@@ -1,6 +1,8 @@
+- add dependencies to eslint-bigpopakap so that they are installed automatically
+- move stylelintrc configurations to an stylelint-bigpopakap plugin
+- change dependencies on eslint-bigpopakap to use git so nothing has to actually be published
 - get everything to restart when @gotcha/shared package is updated
 - encode the pageVisit number so it's not obvious in the URL
-- move stylelintrc configurations to an stylelint-bigpopakap plugin
 - disallow reaching deep into the @gotcha/shared package?
 - fix DefaultTheme ESlint not-found error: https://github.com/alexgorbatchev/eslint-import-resolver-typescript
 - mixpanel funnels to know how far people get
