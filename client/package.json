@@ -2,6 +2,7 @@
   "name": "@gotcha/client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/public",
   "devDependencies": {
     "@gotcha/shared": "file:../shared",
     "@types/jest": "24.0.18",
