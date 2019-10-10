@@ -1,11 +1,17 @@
 import path from 'path';
 
-import sleep from 'await-sleep';
+import delay from 'delay';
 import express, { Request } from 'express';
 import { GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult } from '@gotcha/shared';
 
 const PORT = process.env.PORT || 3001;
 const CLIENT_NODE_MODULE_PATH = path.join(__dirname, '..', 'node_modules', '@gotcha', 'client');
+
+/**
+ * The path under which static assets will be served.
+ * NOTE: the URL onto which this is mounted has to match the "homepage" field on the client's package.json
+ */
+const PUBLIC_ASSETS_PATH = '/public';
 
 const app = express();
 
@@ -37,15 +43,14 @@ function getNextGotchaResult(currentGotchaResult: GotchaResult): GotchaResult {
   }
 }
 
-// NOTE: the URL onto which this is mounted has to match the "homepage" field on the client's package.json
-app.use('/public', express.static(path.join(CLIENT_NODE_MODULE_PATH, 'build')));
+app.use(PUBLIC_ASSETS_PATH, express.static(path.join(CLIENT_NODE_MODULE_PATH, 'build')));
 
 app.get('/', async (req, res) => {
   const currentGotchaResult = getCurrentGotchaResult(req);
 
   if (currentGotchaResult !== 'share') {
     if (currentGotchaResult === 'gotcha-win') {
-      await sleep(1000);
+      await delay(1000);
     }
 
     const nextGotchaResult = getNextGotchaResult(currentGotchaResult);
