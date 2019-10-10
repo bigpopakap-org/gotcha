@@ -32,8 +32,8 @@
   "scripts": {
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "npm-run-all -c lint:js lint:css",
-    "lint:fix": "npm-run-all -c lint:js:fix lint:css:fix",
+    "lint": "npm-run-all -c lint:*",
+    "lintfix": "npm-run-all -c lint:*:fix",
     "lint:js": "yarn eslint --ext json,js,jsx,ts,d.ts,tsx ./",
     "lint:js:fix": "yarn lint:js --fix",
     "lint:css": "yarn stylelint src/**/*.{js,jsx,ts,tsx}",
