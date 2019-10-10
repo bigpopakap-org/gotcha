@@ -1,5 +1,6 @@
 import path from 'path';
 
+import { Duration } from 'luxon';
 import delay from 'delay';
 import express, { Request } from 'express';
 import { GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult } from '@gotcha/shared';
@@ -43,16 +44,18 @@ function getNextGotchaResult(currentGotchaResult: GotchaResult): GotchaResult {
   }
 }
 
+const AFTER_GOTCHA_WIN_DELAY = Duration.fromObject({ seconds: 1 });
+
 app.use(PUBLIC_ASSETS_PATH, express.static(path.join(CLIENT_NODE_MODULE_PATH, 'build')));
 
 app.get('/', async (req, res) => {
   const currentGotchaResult = getCurrentGotchaResult(req);
 
-  if (currentGotchaResult !== 'share') {
-    if (currentGotchaResult === 'gotcha-win') {
-      await delay(1000);
-    }
+  if (currentGotchaResult === 'gotcha-win') {
+    await delay(AFTER_GOTCHA_WIN_DELAY.as('milliseconds'));
+  }
 
+  if (currentGotchaResult !== 'share') {
     const nextGotchaResult = getNextGotchaResult(currentGotchaResult);
     res.redirect(`/?${GOTCHA_RESULT_QUERY_PARAM_NAME}=${nextGotchaResult}`);
   } else {
