@@ -6,13 +6,21 @@ import express, { Request } from 'express';
 import { GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult, isGotchaResult } from '@gotcha/shared';
 
 const PORT = process.env.PORT || 3001;
-const CLIENT_NODE_MODULE_PATH = path.join(__dirname, '..', 'node_modules', '@gotcha', 'client');
+const CLIENT_ASSETS_PATH = path.join(
+  __dirname,
+  '..',
+  '..',
+  'node_modules',
+  '@gotcha',
+  'client',
+  'build'
+);
 
 /**
  * The path under which static assets will be served.
  * NOTE: the URL onto which this is mounted has to match the "homepage" field on the client's package.json
  */
-const PUBLIC_ASSETS_PATH = '/public';
+const PUBLIC_ASSETS_URL_PATH = '/public';
 
 const app = express();
 
@@ -44,22 +52,22 @@ function getNextGotchaResult(currentGotchaResult: GotchaResult): GotchaResult {
   }
 }
 
-const AFTER_GOTCHA_WIN_DELAY = Duration.fromObject({ seconds: 1 });
+const LOAD_DELAY_AFTER_GOTCHA_WIN = Duration.fromObject({ seconds: 1 });
 
-app.use(PUBLIC_ASSETS_PATH, express.static(path.join(CLIENT_NODE_MODULE_PATH, 'build')));
+app.use(PUBLIC_ASSETS_URL_PATH, express.static(CLIENT_ASSETS_PATH));
 
 app.get('/', async (req, res) => {
   const currentGotchaResult = getCurrentGotchaResult(req);
 
   if (currentGotchaResult === 'gotcha-win') {
-    await delay(AFTER_GOTCHA_WIN_DELAY.as('milliseconds'));
+    await delay(LOAD_DELAY_AFTER_GOTCHA_WIN.as('milliseconds'));
   }
 
   if (currentGotchaResult !== 'share') {
     const nextGotchaResult = getNextGotchaResult(currentGotchaResult);
     res.redirect(`/?${GOTCHA_RESULT_QUERY_PARAM_NAME}=${nextGotchaResult}`);
   } else {
-    res.sendFile(path.join(CLIENT_NODE_MODULE_PATH, 'build', 'index.html'));
+    res.sendFile(path.join(CLIENT_ASSETS_PATH, 'index.html'));
   }
 });
 

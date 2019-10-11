@@ -5,11 +5,12 @@
   "engines": {
     "node": ">=10.16"
   },
+  "workspaces": [
+    "shared",
+    "client",
+    "server"
+  ],
   "scripts": {
-    "postinstall": "npm-run-all -c install:*",
-    "install:shared": "cd shared && yarn install",
-    "install:client": "cd client && yarn install",
-    "install:server": "cd server && yarn install",
     "dev": "npm-run-all --parallel dev:*",
     "dev:server": "cd server && yarn dev",
     "build": "npm-run-all -c build:*",
