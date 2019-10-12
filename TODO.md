@@ -1,6 +1,3 @@
-- add dependencies to eslint-bigpopakap so that they are installed automatically
-- move stylelintrc configurations to an stylelint-bigpopakap plugin
-- change dependencies on eslint-bigpopakap to use git so nothing has to actually be published
 - get everything to restart when @gotcha/shared package is updated
 - encode the pageVisit number so it's not obvious in the URL
 - disallow reaching deep into the @gotcha/shared package?
@@ -11,5 +8,3 @@
     - iteration1 - saw result
     - iteration1 - share
     - ... iteration2, iteration3, etc. ...
-- tests and greenkeeper (auto-merge greenkeeper branches)
-- autodeployed staging env and manual production env (useful to make sure greenkeeper updates worked)
