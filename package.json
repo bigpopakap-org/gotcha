@@ -12,11 +12,8 @@
   ],
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
+    "dev:client": "cd client && yarn dev",
     "dev:server": "cd server && yarn dev",
-    "build": "npm-run-all -c build:*",
-    "build:shared": "cd shared && yarn build",
-    "build:client": "cd client && yarn build",
-    "build:server": "cd server && yarn build",
     "test": "npm-run-all -c test:*",
     "test:shared": "cd shared && yarn test",
     "test:client": "cd client && yarn test",
@@ -28,7 +25,13 @@
     "lint:client": "cd client && yarn lint",
     "lint:client:fix": "cd client && yarn lint:fix",
     "lint:server": "cd server && yarn lint",
-    "lint:server:fix": "cd server && yarn lint:fix"
+    "lint:server:fix": "cd server && yarn lint:fix",
+    "build": "npm-run-all -c build:*",
+    "build:shared": "cd shared && yarn build",
+    "build:client": "cd client && yarn build",
+    "build:server": "cd server && yarn build",
+    "prod": "npm-run-all -c prod:*",
+    "prod:server": "cd server && yarn prod"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"

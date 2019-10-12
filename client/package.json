@@ -30,14 +30,15 @@
     "typescript": "3.6.3"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "dev": "cra-build-watch -p /public",
     "test": "react-scripts test",
     "lint": "npm-run-all -c lint:*",
     "lintfix": "npm-run-all -c lint:*:fix",
     "lint:js": "yarn eslint --ext json,js,jsx,ts,d.ts,tsx ./",
     "lint:js:fix": "yarn lint:js --fix",
     "lint:css": "yarn stylelint src/**/*.{js,jsx,ts,tsx}",
-    "lint:css:fix": "yarn lint:css --fix"
+    "lint:css:fix": "yarn lint:css --fix",
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
