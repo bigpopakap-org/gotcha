@@ -6,6 +6,7 @@ const StyledPage = styled.div`
   height: 100%;
 
   background: ${props => props.theme.colors.background};
+
   color: ${props => props.theme.colors.text};
 `;
 

@@ -7,26 +7,29 @@ interface Props {
 }
 
 const StyledHorizontalAndVerticalCenterer = styled.div`
+  display: flex;
+
   width: 100%;
   height: 100%;
 
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 const StyledHorizontalCenterer = styled.div`
+  display: flex;
+
   width: 100%;
 
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 const StyledVerticalCenterer = styled.div`
+  display: flex;
+
   height: 100%;
 
-  display: flex;
   flex-direction: column;
   justify-content: center;
 `;

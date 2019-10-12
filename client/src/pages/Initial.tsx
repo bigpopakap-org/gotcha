@@ -19,7 +19,7 @@ export default class InitialPage extends Component<Props, {}> {
         <Centerer horizontal vertical>
           <Centerer horizontal>
             <h1>Welcome!</h1>
-            <button onClick={this.props.onStartLoading}>Start Tetris!</button>
+            <button onClick={this.props.onStartLoading}>Start!</button>
           </Centerer>
         </Centerer>
       </StyledPage>
