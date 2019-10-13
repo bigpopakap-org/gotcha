@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "/public",
   "devDependencies": {
-    "shared": "latest",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.11",
     "@types/react": "16.9.5",
@@ -16,10 +15,12 @@
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-typescript": "^0.14.0",
+    "npm-watch": "^0.6.0",
     "prettier": "^1.18.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
+    "shared": "latest",
     "styled-components": "^4.4.0",
     "styled-reset": "^4.0.1",
     "stylelint": "^11.0.0",
@@ -29,9 +30,18 @@
     "stylelint-processor-styled-components": "^1.8.0",
     "typescript": "3.6.3"
   },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src",
+        "test"
+      ],
+      "extensions": "json,js,jsx,ts,d.ts,tsx"
+    }
+  },
   "scripts": {
     "clean": "rm -rf build",
-    "dev": "cra-build-watch -p public",
+    "dev": "npm-watch build",
     "test": "react-scripts test",
     "lint": "npm-run-all -c lint:*",
     "lintfix": "npm-run-all -c lint:*:fix",
