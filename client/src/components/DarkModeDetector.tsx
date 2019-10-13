@@ -23,8 +23,11 @@ class DarkModeDetector extends Component<Props, {}> {
       this.props.onDarkModeDetected(queryParams.get('darkMode') === 'true' ? 'dark' : 'light');
     } else {
       // Detect changes to the requested color scheme
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(this.onColorSchemeChanged);
-      window.matchMedia('(prefers-color-scheme: light)').addListener(this.onColorSchemeChanged);
+      // TODO(#19) use a stubbing library for window.matchMedia in tests
+      if ('matchMedia' in window) {
+        window.matchMedia('(prefers-color-scheme: dark)').addListener(this.onColorSchemeChanged);
+        window.matchMedia('(prefers-color-scheme: light)').addListener(this.onColorSchemeChanged);
+      }
 
       // Calculate the current color scheme
       this.onColorSchemeChanged();
@@ -33,14 +36,20 @@ class DarkModeDetector extends Component<Props, {}> {
 
   // TODO we should remove the listeners
   // componentWillUnmount(): void {
-  //   window.matchMedia("(prefers-color-scheme: dark)").removeEventListener(this.onColorSchemeChanged);
-  //   window.matchMedia("(prefers-color-scheme: light)").removeEventListener(this.onColorSchemeChanged);
+  //   // TODO(#19) use a stubbing library for window.matchMedia in tests
+  //   if ('matchMedia' in window) {
+  //     window.matchMedia("(prefers-color-scheme: dark)").removeEventListener(this.onColorSchemeChanged);
+  //     window.matchMedia("(prefers-color-scheme: light)").removeEventListener(this.onColorSchemeChanged);
+  //   }
   // }
 
   onColorSchemeChanged() {
     // Check what mode is active right now
-    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches;
+    // TODO(#19) use a stubbing library for window.matchMedia in tests
+    const isDarkMode =
+      'matchMedia' in window && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isLightMode =
+      'matchMedia' in window && window.matchMedia('(prefers-color-scheme: light)').matches;
 
     if (isDarkMode) {
       this.props.onDarkModeDetected('dark');
