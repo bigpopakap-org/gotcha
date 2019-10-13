@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Reset as ResetCSS } from 'styled-reset';
+// TODO(#7) fix this import statement and remove this ignore
+// eslint-disable-next-line import/named
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { GotchaResult, GOTCHA_RESULT_QUERY_PARAM_NAME, isGotchaResult } from '@gotcha/shared';
 

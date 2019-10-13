@@ -1,7 +1,5 @@
-- get everything to restart when @gotcha/shared package is updated
 - encode the pageVisit number so it's not obvious in the URL
 - disallow reaching deep into the @gotcha/shared package?
-- fix DefaultTheme ESlint not-found error: https://github.com/alexgorbatchev/eslint-import-resolver-typescript
 - mixpanel funnels to know how far people get
     - iteration1 - visit
     - iteration1 - spin

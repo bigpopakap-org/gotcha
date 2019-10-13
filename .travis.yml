@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - "12.12"
+
+jobs:
+  include:
+    - stage: "Build, lint, test"
+      name: "yarn build"
+      script: yarn build
+    - name: "yarn lint"
+      script: yarn build && yarn lint
+    - name: "yarn test"
+      script: yarn build && yarn test
+
+notifications:
+  email: false
