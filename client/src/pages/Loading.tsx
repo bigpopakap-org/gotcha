@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { GOTCHA_RESULT_QUERY_PARAM_NAME, GotchaResult } from '@gotcha/shared';
+import { GotchaResult } from '@gotcha/shared';
 
 import Centerer from 'components/Centerer';
 import PageLayout from 'pages/Layout';
