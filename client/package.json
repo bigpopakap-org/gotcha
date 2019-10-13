@@ -30,7 +30,8 @@
     "typescript": "3.6.3"
   },
   "scripts": {
-    "dev": "cra-build-watch -p /public",
+    "clean": "rm -rf build",
+    "dev": "cra-build-watch -p public",
     "test": "react-scripts test",
     "lint": "npm-run-all -c lint:*",
     "lintfix": "npm-run-all -c lint:*:fix",

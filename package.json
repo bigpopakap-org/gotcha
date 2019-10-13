@@ -11,7 +11,12 @@
     "server"
   ],
   "scripts": {
+    "clean": "npm-run-all -c clean:*",
+    "clean:shared": "cd shared && yarn clean",
+    "clean:client": "cd client && yarn clean",
+    "clean:server": "cd server && yarn clean",
     "dev": "npm-run-all --parallel dev:*",
+    "dev:shared": "cd shared && yarn dev",
     "dev:client": "cd client && yarn dev",
     "dev:server": "cd server && yarn dev",
     "test": "npm-run-all -c test:*",
