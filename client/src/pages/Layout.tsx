@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import styled from 'styled-components';
 
 const StyledPage = styled.div`
@@ -11,7 +11,7 @@ const StyledPage = styled.div`
 `;
 
 export default class PageLayout extends Component<React.HTMLAttributes<HTMLDivElement>, {}> {
-  render() {
+  render(): ReactNode {
     return <StyledPage className={this.props.className}>{this.props.children}</StyledPage>;
   }
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 
 export type DarkMode = 'dark' | 'light';
 
@@ -43,7 +43,7 @@ class DarkModeDetector extends Component<Props, {}> {
   //   }
   // }
 
-  onColorSchemeChanged() {
+  onColorSchemeChanged(): void {
     // Check what mode is active right now
     // TODO(#19) use a stubbing library for window.matchMedia in tests
     const isDarkMode =
@@ -64,7 +64,7 @@ class DarkModeDetector extends Component<Props, {}> {
     }
   }
 
-  render() {
+  render(): ReactNode {
     return React.Fragment;
   }
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import styled from 'styled-components';
 
 interface Props {
@@ -35,7 +35,7 @@ const StyledVerticalCenterer = styled.div`
 `;
 
 export default class Centerer extends Component<Props, {}> {
-  render() {
+  render(): ReactNode {
     if (this.props.horizontal && this.props.vertical) {
       return (
         <StyledHorizontalAndVerticalCenterer>

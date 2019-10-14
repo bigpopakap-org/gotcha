@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import styled from 'styled-components';
 
 import Centerer from 'components/Centerer';
@@ -13,7 +13,7 @@ const StyledPage = styled(PageLayout)`
 `;
 
 export default class InitialPage extends Component<Props, {}> {
-  render() {
+  render(): ReactNode {
     return (
       <StyledPage>
         <Centerer horizontal vertical>

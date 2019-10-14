@@ -1,6 +1,6 @@
 import path from 'path';
 
-import express, { Request } from 'express';
+import express from 'express';
 
 // TODO get this path from some magic function that gives you the installation path of a node module
 const CLIENT_ASSETS_PATH = path.join(

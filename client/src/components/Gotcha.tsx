@@ -23,13 +23,13 @@ export default class Gotcha extends Component<Props, State> {
     window.addEventListener('beforeunload', this.finishLoading);
   }
 
-  startLoading() {
+  startLoading(): void {
     this.setState({
       state: 'loading',
     });
   }
 
-  finishLoading() {
+  finishLoading(): void {
     if (this.state.state === 'loading') {
       this.setState({
         state: 'loaded',
@@ -37,7 +37,7 @@ export default class Gotcha extends Component<Props, State> {
     }
   }
 
-  render() {
+  render(): ReactNode {
     return (() => {
       switch (this.state.state) {
         case 'initial':

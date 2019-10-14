@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import { Reset as ResetCSS } from 'styled-reset';
 // TODO(#7) fix this import statement and remove this ignore
 // eslint-disable-next-line import/named
@@ -48,14 +48,14 @@ class App extends Component<{}, State> {
     });
   }
 
-  onDarkModeDetected(darkMode: DarkMode) {
+  onDarkModeDetected(darkMode: DarkMode): void {
     this.setState({
       theme: darkMode === 'dark' ? DARK_THEME : DEFAULT_THEME,
     });
   }
 
-  render() {
-    const createInitialPage = (onStartLoading: () => void) => (
+  render(): ReactNode {
+    const createInitialPage = (onStartLoading: () => void): ReactNode => (
       <InitialPage onStartLoading={onStartLoading} />
     );
     const loadingPage = <LoadingPage currentGotchaResult={this.state.currentGotchaResult} />;
