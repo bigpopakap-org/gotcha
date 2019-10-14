@@ -14,7 +14,7 @@ export default class Gotcha extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
-      state: 'initial'
+      state: 'initial',
     };
 
     this.startLoading = this.startLoading.bind(this);
@@ -25,14 +25,14 @@ export default class Gotcha extends Component<Props, State> {
 
   startLoading() {
     this.setState({
-      state: 'loading'
+      state: 'loading',
     });
   }
 
   finishLoading() {
     if (this.state.state === 'loading') {
       this.setState({
-        state: 'loaded'
+        state: 'loaded',
       });
     }
   }

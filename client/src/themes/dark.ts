@@ -8,8 +8,8 @@ const theme: DefaultTheme = {
     background: 'lightblue',
     error: 'lightcoral',
     success: 'lightgreen',
-    text: 'black'
-  }
+    text: 'black',
+  },
 };
 
 export default theme;

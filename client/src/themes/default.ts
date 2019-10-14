@@ -8,8 +8,8 @@ const theme: DefaultTheme = {
     background: 'cyan',
     error: 'red',
     success: 'green',
-    text: 'white'
-  }
+    text: 'white',
+  },
 };
 
 export default theme;
