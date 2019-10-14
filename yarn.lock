@@ -4178,6 +4178,11 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-bigpopakap@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-0.1.2.tgz#952b542173f0a13f20cf2b2da466eda9fbbb315c"
+  integrity sha512-ibEwpzLLw92SyPfBWrXmMi9qGpbGpSMdmHWZrBNo7e4ebhqtzIDwQ3BZa2y+Obc6CTi/tWvPs+HI+EX5mqJstw==
+
 eslint-config-react-app@^5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-5.0.2.tgz#df40d73a1402986030680c040bbee520db5a32a4"
