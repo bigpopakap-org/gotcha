@@ -36,7 +36,7 @@ class App extends Component<{}, State> {
 
     this.state = {
       theme: DEFAULT_THEME,
-      currentGotchaResult: 'lose'
+      currentGotchaResult: 'lose',
     };
 
     this.onDarkModeDetected = this.onDarkModeDetected.bind(this);
@@ -44,13 +44,13 @@ class App extends Component<{}, State> {
 
   componentDidMount(): void {
     this.setState({
-      currentGotchaResult: getGotchaResult()
+      currentGotchaResult: getGotchaResult(),
     });
   }
 
   onDarkModeDetected(darkMode: DarkMode) {
     this.setState({
-      theme: darkMode === 'dark' ? DARK_THEME : DEFAULT_THEME
+      theme: darkMode === 'dark' ? DARK_THEME : DEFAULT_THEME,
     });
   }
 

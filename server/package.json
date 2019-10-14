@@ -8,7 +8,7 @@
     "dev": "ts-node-dev --respawn --transpileOnly src/server.ts",
     "test": "echo \"No tests implemented yet\"",
     "lint": "yarn eslint --ext json,js,jsx,ts,d.ts,tsx ./",
-    "lint:fix": "yarn lint --fix",
+    "lintfix": "yarn lint --fix",
     "build": "tsc",
     "prod": "node dist/server.js"
   },
@@ -20,7 +20,7 @@
     "client": "latest",
     "delay": "4.3.0",
     "eslint": "6.5.1",
-    "eslint-config-bigpopakap": "0.1.2",
+    "eslint-config-bigpopakap": "0.2.0",
     "eslint-config-prettier": "6.4.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-json": "1.4.0",
