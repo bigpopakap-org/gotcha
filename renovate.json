@@ -3,5 +3,6 @@
     "config:base"
   ],
   "assignees": ["bigpopakap"],
-  "automerge": true
+  "automerge": true,
+  "semanticCommits": true
 }
