@@ -18,7 +18,7 @@
     "dev": "npm-watch build",
     "test": "echo \"No tests implemented yet\"",
     "lint": "yarn eslint --ext json,js,jsx,ts,d.ts,tsx ./",
-    "lint:fix": "yarn lint --fix",
+    "lintfix": "yarn lint --fix",
     "build": "tsc"
   },
   "devDependencies": {

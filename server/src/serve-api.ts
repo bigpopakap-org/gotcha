@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   res.jsonp({
-    message: 'Placeholder for the API'
+    message: 'Placeholder for the API',
   });
 });
 
