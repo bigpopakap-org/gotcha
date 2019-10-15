@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import styled from 'styled-components';
 
 const StyledFullscreenDiv = styled.div`
@@ -7,7 +7,7 @@ const StyledFullscreenDiv = styled.div`
 `;
 
 export default class Fullscreen extends Component<{}, {}> {
-  render() {
+  render(): ReactNode {
     return <StyledFullscreenDiv>{this.props.children}</StyledFullscreenDiv>;
   }
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import styled from 'styled-components';
 import { GotchaResult } from '@gotcha/shared';
 
@@ -14,7 +14,7 @@ const StyledPage = styled(PageLayout)`
 `;
 
 export default class LoadedPage extends Component<Props, {}> {
-  render() {
+  render(): ReactNode {
     return (
       <StyledPage>
         <Centerer horizontal vertical>
