@@ -11115,10 +11115,10 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-stylelint-config-bigpopakap@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/stylelint-config-bigpopakap/-/stylelint-config-bigpopakap-0.1.1.tgz#e3671fc374789763fe031b0ac23e2b5b56130f07"
-  integrity sha512-aBdsdnEvbmk2IwrMsJ1IlwkEEw+qu5+CmZrT77Z8Ocs51crBII763ilRD5KoHQHZeilidH7kQwGiPujp7X59+Q==
+stylelint-config-bigpopakap@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-bigpopakap/-/stylelint-config-bigpopakap-1.0.0.tgz#9c29efddd19e83b2346e4b3ac0ec75d658b7aa5d"
+  integrity sha512-28a0k026WkELnx+pIK3v0lVVOCmu70LLOL3+jQZIEcBm4kbXG+LK7Bpb9acL8Y6XjVPk5Xu33eemGK7xACoPiA==
 
 stylelint-config-recommended@^3.0.0:
   version "3.0.0"
