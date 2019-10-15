@@ -4255,10 +4255,10 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-bigpopakap@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-0.3.0.tgz#ab90e88aab2380ba60c9007f24e38f30d61de870"
-  integrity sha512-U/qf6dkN43imyEHa+BnB4Y1C6YC0Z8iy6+Baq1IA7ZDwqq+xtgYrPqI7ycuhPE2vhLpQLXecZCYlGY+FFE4eaw==
+eslint-config-bigpopakap@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.0.0.tgz#ab63df61fc097c85b5cdffcee018b816eb194cac"
+  integrity sha512-UvObWsjIuBiN7aP3MiePwk9jIxvjucbpDnatOWKGYMPAgwtsmOjFU9mxk1V2Cy+1pBy0CPqFXj8ngH7pezJpcA==
 
 eslint-config-prettier@6.4.0:
   version "6.4.0"
