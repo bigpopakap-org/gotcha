@@ -1,8 +1,0 @@
-{
-  "extends": [
-    "config:base"
-  ],
-  "assignees": ["bigpopakap"],
-  "automerge": true,
-  "semanticCommits": true
-}
