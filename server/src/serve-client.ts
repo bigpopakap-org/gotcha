@@ -1,17 +1,17 @@
 import path from 'path';
 
 import express from 'express';
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
+import { getInstalledPathSync } from 'get-installed-path';
 
-// TODO get this path from some magic function that gives you the installation path of a node module
-const CLIENT_ASSETS_PATH = path.join(
-  __dirname,
-  '..',
-  '..',
-  'node_modules',
-  '@gotcha',
-  'client',
-  'build'
-);
+// Get the location of the client index.html to serve
+const CLIENT_MODULE_PATH = getInstalledPathSync('@gotcha/client', {
+  local: true,
+  paths: process.mainModule && process.mainModule.paths,
+});
+const CLIENT_ASSETS_PATH = path.join(CLIENT_MODULE_PATH, 'build');
+const CLIENT_INDEX_HTML_PATH = path.join(CLIENT_ASSETS_PATH, 'index.html');
 
 /**
  * The path under which static assets will be served.
@@ -19,14 +19,14 @@ const CLIENT_ASSETS_PATH = path.join(
  */
 const PUBLIC_ASSETS_URL_PATH = '/public';
 
+// Serve the client's static assets and index.html
 const app = express();
-
 app.use(PUBLIC_ASSETS_URL_PATH, express.static(CLIENT_ASSETS_PATH));
-
 app.get('/', async (req, res) => {
-  res.sendFile(path.join(CLIENT_ASSETS_PATH, 'index.html'));
+  await res.sendFile(CLIENT_INDEX_HTML_PATH);
 });
 
+// Redirect any other unhandled requests back to the index
 app.get('*', (req, res) => {
   res.redirect('/');
 });

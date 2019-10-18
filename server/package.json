@@ -24,5 +24,8 @@
     "shared": "latest",
     "ts-node-dev": "1.0.0-pre.43",
     "typescript": "3.6.4"
+  },
+  "dependencies": {
+    "get-installed-path": "^4.0.8"
   }
 }
