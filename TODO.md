@@ -1,8 +1,0 @@
-- encode the pageVisit number so it's not obvious in the URL
-- disallow reaching deep into the @gotcha/shared package?
-- mixpanel funnels to know how far people get
-    - iteration1 - visit
-    - iteration1 - spin
-    - iteration1 - saw result
-    - iteration1 - share
-    - ... iteration2, iteration3, etc. ...

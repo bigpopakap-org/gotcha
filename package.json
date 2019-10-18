@@ -1,6 +1,6 @@
 {
-  "name": "@gotcha/project",
-  "version": "0.1.0",
+  "name": "project",
+  "version": "0.0.1",
   "private": true,
   "engines": {
     "node": ">=12.12"
@@ -12,37 +12,42 @@
   ],
   "scripts": {
     "clean": "npm-run-all -c clean:*",
-    "clean:shared": "cd shared && yarn clean",
-    "clean:client": "cd client && yarn clean",
-    "clean:server": "cd server && yarn clean",
+    "clean:shared": "yarn workspace shared run clean",
+    "clean:client": "yarn workspace client run clean",
+    "clean:server": "yarn workspace server run clean",
+
     "dev": "npm-run-all --parallel dev:*",
-    "dev:shared": "cd shared && yarn dev",
-    "dev:client": "cd client && yarn dev",
-    "dev:server": "cd server && yarn dev",
+    "dev:shared": "yarn workspace shared run dev",
+    "dev:client": "yarn workspace client run dev",
+    "dev:server": "yarn workspace server run dev",
+
     "test": "npm-run-all -c test:*",
-    "test:shared": "cd shared && yarn test",
-    "test:client": "cd client && yarn test",
-    "test:server": "cd server && yarn test",
+    "test:shared": "yarn workspace shared run test",
+    "test:client": "yarn workspace client run test",
+    "test:server": "yarn workspace server run test",
+
     "lint": "npm-run-all -c lint:*",
     "lintfix": "npm-run-all -c lint:*:fix",
-    "lint:shared": "cd shared && yarn lint",
-    "lint:shared:fix": "cd shared && yarn lintfix",
-    "lint:client": "cd client && yarn lint",
-    "lint:client:fix": "cd client && yarn lintfix",
-    "lint:server": "cd server && yarn lint",
-    "lint:server:fix": "cd server && yarn lintfix",
+    "lint:shared": "yarn workspace shared run lint",
+    "lint:shared:fix": "yarn workspace shared run lintfix",
+    "lint:client": "yarn workspace client run lint",
+    "lint:client:fix": "yarn workspace client run lintfix",
+    "lint:server": "yarn workspace server run lint",
+    "lint:server:fix": "yarn workspace server run lintfix",
+
     "build": "npm-run-all -c build:*",
-    "build:shared": "cd shared && yarn build",
-    "build:client": "cd client && yarn build",
-    "build:server": "cd server && yarn build",
+    "build:shared": "yarn workspace shared run build",
+    "build:client": "yarn workspace client run build",
+    "build:server": "yarn workspace server run build",
+
     "prod": "npm-run-all -c prod:*",
-    "prod:server": "cd server && yarn prod"
+    "prod:server": "yarn workspace server run prod"
   },
   "devDependencies": {
     "npm-run-all": "4.1.5",
     "renovate-config-bigpopakap": "1.0.0"
   },
   "resolutions": {
-    "hawk": "^1.0.0"
+    "hawk": ">= 1.0.0"
   }
 }

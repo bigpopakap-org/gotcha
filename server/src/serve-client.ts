@@ -6,7 +6,7 @@ import express from 'express';
 import { getInstalledPathSync } from 'get-installed-path';
 
 // Get the location of the client index.html to serve
-const CLIENT_MODULE_PATH = getInstalledPathSync('@gotcha/client', {
+const CLIENT_MODULE_PATH = getInstalledPathSync('client', {
   local: true,
   paths: process.mainModule && process.mainModule.paths,
 });
@@ -19,16 +19,15 @@ const CLIENT_INDEX_HTML_PATH = path.join(CLIENT_ASSETS_PATH, 'index.html');
  */
 const PUBLIC_ASSETS_URL_PATH = '/public';
 
-// Serve the client's static assets and index.html
 const app = express();
-app.use(PUBLIC_ASSETS_URL_PATH, express.static(CLIENT_ASSETS_PATH));
-app.get('/', async (req, res) => {
-  await res.sendFile(CLIENT_INDEX_HTML_PATH);
-});
 
-// Redirect any other unhandled requests back to the index
-app.get('*', (req, res) => {
-  res.redirect('/');
+// Serve the client's static assets
+app.use(PUBLIC_ASSETS_URL_PATH, express.static(CLIENT_ASSETS_PATH));
+
+// Any other path serves the index.html
+// Client-side routing will take care of getting to the right page
+app.get('*', async (req, res) => {
+  await res.sendFile(CLIENT_INDEX_HTML_PATH);
 });
 
 export default app;

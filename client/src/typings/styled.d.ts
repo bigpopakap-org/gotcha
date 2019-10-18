@@ -5,10 +5,7 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      brand: string;
       background: string;
-      error: string;
-      success: string;
       text: string;
     };
   }
