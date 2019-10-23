@@ -4245,10 +4245,10 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-bigpopakap@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.1.1.tgz#a705aa4bf11a8fa6fbf4bf6e4f569397ea3f2cae"
-  integrity sha512-1VNRdmzz2D91n/pXoFYw94eo3NXHcHugBDo/3poaQvt/yyzW3I/JmTa2UAprAK1rFyklEvmkunKXiXAQnVKhrg==
+eslint-config-bigpopakap@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.1.2.tgz#de52edf379c889b45c0fb52ed72c463838f1214e"
+  integrity sha512-H3IjztYEqdmMU3CVgbvKKj40WAHOxDnZfioJfEl1I+IEwx41N0yP1NhdajPcfhG4kEtdWtcsrPWP0sG/VLGsuw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.5.0"
     "@typescript-eslint/parser" "2.5.0"
@@ -4257,7 +4257,7 @@ eslint-config-bigpopakap@1.1.1:
     eslint-config-react-app "5.0.2"
     eslint-plugin-css-modules "2.11.0"
     eslint-plugin-import "2.18.2"
-    eslint-plugin-json "1.4.0"
+    eslint-plugin-json "2.0.1"
     eslint-plugin-jsx-a11y "6.2.3"
     eslint-plugin-prettier "3.1.1"
     eslint-plugin-typescript "0.14.0"
@@ -4339,12 +4339,13 @@ eslint-plugin-import@2.18.2:
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
 
-eslint-plugin-json@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-json/-/eslint-plugin-json-1.4.0.tgz#4d29f3a4c08d412df739bd65049ce23636515af8"
-  integrity sha512-CECvgRAWtUzuepdlPWd+VA7fhyF9HT183pZnl8wQw5x699Mk/MbME/q8xtULBfooi3LUbj6fToieNmsvUcDxWA==
+eslint-plugin-json@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-json/-/eslint-plugin-json-2.0.1.tgz#825ba21fed9522a7080044f0692ffffffbc237e3"
+  integrity sha512-IxKZIlMyBn0tvxlBj2viW0N/UBuoey1oYpV+SNVuNFmy4xsNuwgeoOjzEeFDnVXL0FpIo7UbQSeZ+lfh2D/nLQ==
   dependencies:
-    vscode-json-languageservice "^3.2.1"
+    lodash "^4.17.15"
+    vscode-json-languageservice "^3.3.5"
 
 eslint-plugin-jsx-a11y@6.2.3:
   version "6.2.3"
@@ -12082,7 +12083,7 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
-vscode-json-languageservice@^3.2.1:
+vscode-json-languageservice@^3.3.5:
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/vscode-json-languageservice/-/vscode-json-languageservice-3.3.5.tgz#e222e8391beeb23cfa40cf17fd57d1594d295fc7"
   integrity sha512-Le6SG5aRdrRc5jVeVMRkYbGH9rrVaZHCW0Oa8zCFQ0T8viUud9qdZ29lSv5NPNLwTB8mn4pYucFyyEPM2YWvLA==
