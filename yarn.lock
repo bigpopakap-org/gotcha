@@ -4252,15 +4252,15 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-bigpopakap@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.1.3.tgz#40eda6e85cebcbd35d65396752d97616c404c4c9"
-  integrity sha512-nzX2baWL7bTDpCuaqD9K0cqoLMD6kvaLzEi8I6rHBI3rYcOzPpIZX/pXGJXh+LlOcjspGzlp9NNFZLqfC7682Q==
+eslint-config-bigpopakap@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.1.4.tgz#7e8a9be866287d9a9cd7d1ab3f6298e421d2e6ea"
+  integrity sha512-mWyp7brBbsaxoKxx0oQtKIleGxpPHAhaLAEIx3THl3nINqt6T4hcC4I1hnmDj5l7Qc9zRwZ16T6Qb+5OnsMdJQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.5.0"
     "@typescript-eslint/parser" "2.5.0"
     eslint "6.6.0"
-    eslint-config-prettier "6.4.0"
+    eslint-config-prettier "6.5.0"
     eslint-config-react-app "5.0.2"
     eslint-plugin-css-modules "2.11.0"
     eslint-plugin-import "2.18.2"
@@ -4273,10 +4273,10 @@ eslint-config-bigpopakap@1.1.3:
     typescript "3.6.4"
     yargs "14.2.0"
 
-eslint-config-prettier@6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.4.0.tgz#0a04f147e31d33c6c161b2dd0971418ac52d0477"
-  integrity sha512-YrKucoFdc7SEko5Sxe4r6ixqXPDP1tunGw91POeZTTRKItf/AMFYt/YLEQtZMkR2LVpAVhcAcZgcWpm1oGPW7w==
+eslint-config-prettier@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.5.0.tgz#aaf9a495e2a816865e541bfdbb73a65cc162b3eb"
+  integrity sha512-cjXp8SbO9VFGW/Z7mbTydqS9to8Z58E5aYhj3e1+Hx7lS9s6gL5ILKNpCqZAFOVYRcSkWPFYljHrEh8QFEK5EQ==
   dependencies:
     get-stdin "^6.0.0"
 
