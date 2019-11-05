@@ -4253,10 +4253,10 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-bigpopakap@1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.1.7.tgz#a87116aa71e01b7b410622ef5b30de6cdc5cb21e"
-  integrity sha512-/ChB0ON/hTQPltCDUeuOiTahPCay90xKcVNAfybICbS4nVZKFA4xUhOqSriz5D/MsNpK2SC5XtDmTvb/8Sm77g==
+eslint-config-bigpopakap@1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.1.8.tgz#12506ad6371f7247180e1b1c45ab7ca65213bb27"
+  integrity sha512-7WeZFHsA82MIxLrL+0mfR0+Q9QNwn4Ew182LxFLWY9hYz8YjIKb/t208Ac/0QVAbH1IA8tn9lM7heHVAhh98ng==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.6.1"
     "@typescript-eslint/parser" "2.6.1"
@@ -4271,7 +4271,7 @@ eslint-config-bigpopakap@1.1.7:
     eslint-plugin-typescript "0.14.0"
     prettier "1.18.2"
     shelljs "0.8.3"
-    typescript "3.6.4"
+    typescript "3.7.2"
     yargs "14.2.0"
 
 eslint-config-prettier@6.5.0:
@@ -11817,11 +11817,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typescript@3.6.4:
-  version "3.6.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.4.tgz#b18752bb3792bc1a0281335f7f6ebf1bbfc5b91d"
-  integrity sha512-unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==
 
 typescript@3.7.2:
   version "3.7.2"
