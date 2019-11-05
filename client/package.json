@@ -18,7 +18,7 @@
     "styled-components": "4.4.1",
     "styled-reset": "4.0.3",
     "stylelint-config-bigpopakap": "1.1.1",
-    "typescript": "3.6.4"
+    "typescript": "3.7.2"
   },
   "watch": {
     "build": {
