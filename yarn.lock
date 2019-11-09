@@ -4253,10 +4253,10 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-bigpopakap@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.2.3.tgz#f5933e7f208c73f8fa6ddd81c093c4cbe159c542"
-  integrity sha512-vbYIQJXpaaELpztf6QKl/xyhXqC6OaYerZu89X/Qf9IePpLaNWDfQH4phMVMxouCw5wcq485a4HSqPAjVOFBUQ==
+eslint-config-bigpopakap@1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.2.4.tgz#200335b83545018378f302a390ad57f230c95bc4"
+  integrity sha512-RoqcYqP99hVx3K10CMErXtUa88iuYqSUbFPjNPeIIZWpsnGBZQ1MFS7LbNeWeiIe5+8KxTqN4OPd5K30SPRCyA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.6.1"
     "@typescript-eslint/parser" "2.6.1"
@@ -4270,7 +4270,7 @@ eslint-config-bigpopakap@1.2.3:
     eslint-plugin-prettier "3.1.1"
     eslint-plugin-react "7.16.0"
     eslint-plugin-typescript "0.14.0"
-    prettier "1.19.0"
+    prettier "1.19.1"
     shelljs "0.8.3"
     typescript "3.7.2"
     yargs "14.2.0"
@@ -9521,10 +9521,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@1.19.0:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.0.tgz#3bec4489d5eebcd52b95ddd2c22467b5c852fde1"
-  integrity sha512-GlAIjk6DjkNT6u/Bw5QCWrbzh9YlLKwwmJT//1YiCR3WDpZDnyss64aXHQZgF8VKeGlWnX6+tGsKSVxsZT/gtA==
+prettier@1.19.1:
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
+  integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
 
 pretty-bytes@^5.1.0:
   version "5.3.0"
