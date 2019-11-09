@@ -4253,10 +4253,10 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-bigpopakap@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.2.2.tgz#bdbfa006b5b85040dcedfb8145dbbc7db1889f81"
-  integrity sha512-7ysDw2jYFYvbRw/e+FTmi5pl9uyDbTwu0Q8us8IL5Ejia3qdPMbYv+eR8ZX6biWXiAryQFnG09MqeJbmZjdP5Q==
+eslint-config-bigpopakap@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-1.2.3.tgz#f5933e7f208c73f8fa6ddd81c093c4cbe159c542"
+  integrity sha512-vbYIQJXpaaELpztf6QKl/xyhXqC6OaYerZu89X/Qf9IePpLaNWDfQH4phMVMxouCw5wcq485a4HSqPAjVOFBUQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.6.1"
     "@typescript-eslint/parser" "2.6.1"
@@ -4268,6 +4268,7 @@ eslint-config-bigpopakap@1.2.2:
     eslint-plugin-json "2.0.1"
     eslint-plugin-jsx-a11y "6.2.3"
     eslint-plugin-prettier "3.1.1"
+    eslint-plugin-react "7.16.0"
     eslint-plugin-typescript "0.14.0"
     prettier "1.19.0"
     shelljs "0.8.3"
@@ -4396,6 +4397,21 @@ eslint-plugin-react@7.14.3:
     object.values "^1.1.0"
     prop-types "^15.7.2"
     resolve "^1.10.1"
+
+eslint-plugin-react@7.16.0:
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.16.0.tgz#9928e4f3e2122ed3ba6a5b56d0303ba3e41d8c09"
+  integrity sha512-GacBAATewhhptbK3/vTP09CbFrgUJmBSaaRcWdbQLFvUZy9yVcQxigBNHGPU/KE2AyHpzj3AWXpxoMTsIDiHug==
+  dependencies:
+    array-includes "^3.0.3"
+    doctrine "^2.1.0"
+    has "^1.0.3"
+    jsx-ast-utils "^2.2.1"
+    object.entries "^1.1.0"
+    object.fromentries "^2.0.0"
+    object.values "^1.1.0"
+    prop-types "^15.7.2"
+    resolve "^1.12.0"
 
 eslint-plugin-typescript@0.14.0:
   version "0.14.0"
