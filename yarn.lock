@@ -4253,10 +4253,10 @@ escodegen@^1.11.0, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-bigpopakap@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-2.0.2.tgz#d459162c9055156b017c28d86dacbaa8fe735285"
-  integrity sha512-ez2qSwCBdCsF9OeJXzzmE8XDMqISkjfLWddxGOOEGheRqTg2XquVKmbt7gHueMo4tl39QELIxSlJbaLfeKs/1Q==
+eslint-config-bigpopakap@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-bigpopakap/-/eslint-config-bigpopakap-2.0.3.tgz#e0c0f3cac958cfc2316e588e4ef2a79527b67340"
+  integrity sha512-urBE3SepZ4uusEGBvQnT6CdbVVHYVLEykROCkzkM4TdMHilDp2dV1HvppYantQD/aRNLLgBOkBQqc7cxlEGgQA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.7.0"
     "@typescript-eslint/parser" "2.7.0"
