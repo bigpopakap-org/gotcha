@@ -10240,10 +10240,10 @@ renderkid@^2.0.1:
     strip-ansi "^3.0.0"
     utila "^0.4.0"
 
-renovate-config-bigpopakap@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/renovate-config-bigpopakap/-/renovate-config-bigpopakap-1.1.1.tgz#5b05ca30a3296f47d1312898ebd47f2b5d984e03"
-  integrity sha512-veMsD629h7SPxSVrutKTL0cX98lGN0B/+RdvOMjKcoC9B1j0pBs7XnpBg9VMZV4pRUOb6db9COkbl3icGbUeyg==
+renovate-config-bigpopakap@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/renovate-config-bigpopakap/-/renovate-config-bigpopakap-1.1.2.tgz#c8a9e4c7f33b940a8960c7e91adaaad803c5bd69"
+  integrity sha512-N5GvvC1bTSWZ4B+1RjyOARDCKvr/DFy0jFbqaJX9pKx/21+FrLUBa7F/XVhDjPThAWUOotDEWY37Ossw8R4/Ow==
 
 repeat-element@^1.1.2:
   version "1.1.3"
