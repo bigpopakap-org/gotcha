@@ -1,1 +1,1 @@
-export * from './gotcha';
+export * from 'gotcha';

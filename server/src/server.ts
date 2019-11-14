@@ -1,7 +1,7 @@
 import express from 'express';
 
-import serveClient from './serve-client';
-import serveApi from './serve-api';
+import serveClient from 'serve-client';
+import serveApi from 'serve-api';
 
 const PORT = process.env.PORT || 3001;
 
