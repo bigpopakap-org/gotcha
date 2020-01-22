@@ -5,13 +5,16 @@ node_js:
 
 jobs:
   include:
-    - stage: "Build, lint, test"
-      name: "yarn build"
-      script: yarn build
-    - name: "yarn lint"
-      script: yarn build && yarn lint
-    - name: "yarn test"
-      script: yarn build && yarn test
+    - stage: "Validate"
+      name: "Build"
+      script: yarn && yarn build
+    - name: "Verify yarn.lock"
+      script: yarn && yarn check --integrity
+    - name: "Lint code"
+      # Need to build before linting or else the @projitect/* modules cannot be found
+      script: yarn && yarn build && yarn lint
+    - name: "Automated tests"
+      script: yarn && yarn test
 
 notifications:
   email: false
