@@ -4,12 +4,13 @@
   "private": true,
   "homepage": "/public",
   "devDependencies": {
+    "@bigpopakap/eslint-config": "1.1.18",
+    "@bigpopakap/stylelint-config": "1.0.12",
     "@types/jest": "24.0.22",
     "@types/node": "12.12.7",
     "@types/react": "16.9.11",
     "@types/react-dom": "16.9.4",
     "@types/styled-components": "4.4.0",
-    "eslint-config-bigpopakap": "2.0.2",
     "npm-watch": "0.6.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
@@ -17,7 +18,6 @@
     "shared": "latest",
     "styled-components": "4.4.1",
     "styled-reset": "4.0.6",
-    "stylelint-config-bigpopakap": "1.2.1",
     "typescript": "3.7.2"
   },
   "watch": {
