@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'bigpopakap/node'
+    '@bigpopakap/eslint-config/node'
   ],
   settings: {
     "import/resolver": {
