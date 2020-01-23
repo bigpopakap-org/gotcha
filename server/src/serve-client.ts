@@ -20,15 +20,15 @@ const CLIENT_INDEX_HTML_PATH = path.join(CLIENT_ASSETS_PATH, 'index.html');
 const PUBLIC_ASSETS_URL_PATH = '/public';
 
 // Serve the client's static assets and index.html
-const app = express();
-app.use(PUBLIC_ASSETS_URL_PATH, express.static(CLIENT_ASSETS_PATH));
-app.get('/', async (req, res) => {
+const serveClient = express();
+serveClient.use(PUBLIC_ASSETS_URL_PATH, express.static(CLIENT_ASSETS_PATH));
+serveClient.get('/', async (req, res) => {
   await res.sendFile(CLIENT_INDEX_HTML_PATH);
 });
 
 // Redirect any other unhandled requests back to the index
-app.get('*', (req, res) => {
+serveClient.get('*', (req, res) => {
   res.redirect('/');
 });
 
-export default app;
+export default serveClient;

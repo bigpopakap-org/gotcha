@@ -1,5 +1,5 @@
 module.exports = {
   "extends": [
-    "stylelint-config-bigpopakap/react-styled-components"
+    "@bigpopakap/stylelint-config/react-styled-components"
   ]
 };

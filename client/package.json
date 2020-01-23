@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "/public",
+  "engines": {
+    "node": ">=12.12"
+  },
   "devDependencies": {
     "@bigpopakap/eslint-config": "1.1.18",
     "@bigpopakap/stylelint-config": "1.0.12",
