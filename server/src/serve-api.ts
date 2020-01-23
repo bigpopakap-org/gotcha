@@ -1,11 +1,11 @@
 import express from 'express';
 
-const app = express();
+const serveApi = express();
 
-app.get('/', (req, res) => {
+serveApi.get('/', (req, res) => {
   res.jsonp({
     message: 'Placeholder for the API',
   });
 });
 
-export default app;
+export default serveApi;

@@ -1,3 +1,5 @@
+import { URLSearchParams } from 'url';
+
 import React, { Component, ReactNode } from 'react';
 
 export type DarkMode = 'dark' | 'light';

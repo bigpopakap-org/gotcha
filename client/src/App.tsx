@@ -1,3 +1,5 @@
+import { URLSearchParams } from 'url';
+
 import React, { Component, ReactNode } from 'react';
 import { Reset as ResetCSS } from 'styled-reset';
 // TODO(#7) fix this import statement and remove this ignore
