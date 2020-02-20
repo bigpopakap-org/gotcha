@@ -21,7 +21,7 @@
     "shared": "latest",
     "styled-components": "5.0.1",
     "styled-reset": "4.1.0",
-    "typescript": "3.7.5"
+    "typescript": "3.8.2"
   },
   "watch": {
     "build": {
