@@ -1295,10 +1295,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bigpopakap/eslint-config@1.1.55":
-  version "1.1.55"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.55.tgz#b5878f62db0820073b1b4b9b8791b1834541104c"
-  integrity sha512-Y4V62FOniqhRhdiyXupQHeWFlqGYzVXii8vI+TuAxzGVdiNvUf5j5tZyqpQdUJjDQ8ftxp+rwNwSd6ZCduxJAA==
+"@bigpopakap/eslint-config@1.1.56":
+  version "1.1.56"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.56.tgz#3a1ac1f70dbd6e51deffa62739249f9e93b21fcd"
+  integrity sha512-X93aYYOOScUNxLrGhQQnSosLgzYXDrr9Bs+5tGDUka/6mS8r72AYOJZFwRxXFGQCFwEx01XV7GTt7dqfIn1nxg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.25.0"
     "@typescript-eslint/parser" "2.25.0"
@@ -1311,7 +1311,7 @@
     eslint-plugin-css-modules "2.11.0"
     eslint-plugin-eslint-comments "3.1.2"
     eslint-plugin-filenames "1.3.2"
-    eslint-plugin-flowtype "4.6.0"
+    eslint-plugin-flowtype "4.7.0"
     eslint-plugin-import "2.20.1"
     eslint-plugin-json "2.1.1"
     eslint-plugin-jsx-a11y "6.2.3"
@@ -4992,6 +4992,13 @@ eslint-plugin-flowtype@4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/eslint-plugin-flowtype/-/eslint-plugin-flowtype-4.6.0.tgz#82b2bd6f21770e0e5deede0228e456cb35308451"
   integrity sha512-W5hLjpFfZyZsXfo5anlu7HM970JBDqbEshAJUkeczP6BFCIfJXuiIBQXyberLRtOStT0OGPF8efeTbxlHk4LpQ==
+  dependencies:
+    lodash "^4.17.15"
+
+eslint-plugin-flowtype@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-4.7.0.tgz#903a6ea3eb5cbf4c7ba7fa73cc43fc39ab7e4a70"
+  integrity sha512-M+hxhSCk5QBEValO5/UqrS4UunT+MgplIJK5wA1sCtXjzBcZkpTGRwxmLHhGpbHcrmQecgt6ZL/KDdXWqGB7VA==
   dependencies:
     lodash "^4.17.15"
 
