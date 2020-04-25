@@ -1295,10 +1295,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bigpopakap/eslint-config@1.1.68":
-  version "1.1.68"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.68.tgz#4554efc212a4c23f83c914e500e47c3de12636c6"
-  integrity sha512-JRHjjg9rYSzQ/kv5DFImv7Ur/BG1F0p11cBEw+eYMacVH6w+5Y22PqP1Cmdr/o3T/pJthU3PotpeGhrDmDWxJA==
+"@bigpopakap/eslint-config@1.1.69":
+  version "1.1.69"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.69.tgz#99c9d954e01e4036da8f6c625e5363583995d6c6"
+  integrity sha512-5RZJ9DRS+lB/nEWrZWXYdS1cYjU3q3qQQNkY7bY6UxUB65jTJKJ+rGRJgNPKFi01iACSmOm6Z7scOTLrfW6VQA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.29.0"
     "@typescript-eslint/parser" "2.29.0"
@@ -1321,7 +1321,7 @@
     eslint-plugin-react-hooks "3.0.0"
     eslint-plugin-typescript "0.14.0"
     prettier "1.19.1"
-    shelljs "0.8.3"
+    shelljs "0.8.4"
     typescript "3.8.3"
     yargs "15.3.1"
 
@@ -11638,10 +11638,10 @@ shell-quote@1.7.2, shell-quote@^1.6.1:
   resolved "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
-shelljs@0.8.3:
-  version "0.8.3"
-  resolved "https://registry.npmjs.org/shelljs/-/shelljs-0.8.3.tgz#a7f3319520ebf09ee81275b2368adb286659b097"
-  integrity sha512-fc0BKlAWiLpwZljmOvAOTE/gXawtCoNrP5oaY7KIaQbbyHeQVg01pSEuEGvGh3HEdBU4baCD7wQBwADmM/7f7A==
+shelljs@0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.8.4.tgz#de7684feeb767f8716b326078a8a00875890e3c2"
+  integrity sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==
   dependencies:
     glob "^7.0.0"
     interpret "^1.0.0"
