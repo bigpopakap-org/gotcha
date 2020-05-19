@@ -1325,12 +1325,12 @@
     typescript "3.9.2"
     yargs "15.3.1"
 
-"@bigpopakap/stylelint-config@1.0.25":
-  version "1.0.25"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/stylelint-config/-/stylelint-config-1.0.25.tgz#a2a8b5d3b9380ae8f4819ffaee49694db6d1ba33"
-  integrity sha512-RaajZBsTIj+iDIQnDJOHGFlMM0cLcflfow3VUojJ88PT6j51DQ+dRWdrY0wJ+jAKU9OPWMkPgTsj0GBkR9FCig==
+"@bigpopakap/stylelint-config@1.0.26":
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/stylelint-config/-/stylelint-config-1.0.26.tgz#f193a63afa0440bcdcb6395e0007570e67793f11"
+  integrity sha512-d98Vj777q3AY6uRNwIBs9uE0rs7ArqxunbzSWBf9bfq8icz/smTNMjPKfIOtew5yO1kqbq8BF2x6WkdiUphaIQ==
   dependencies:
-    stylelint "13.4.1"
+    stylelint "13.5.0"
     stylelint-config-standard "20.0.0"
     stylelint-config-styled-components "0.1.1"
     stylelint-order "4.0.0"
@@ -12320,10 +12320,10 @@ stylelint-order@4.0.0:
     postcss "^7.0.26"
     postcss-sorting "^5.0.1"
 
-stylelint@13.4.1:
-  version "13.4.1"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.4.1.tgz#b347d27407d644492f8877657f6c0e7e823bd29f"
-  integrity sha512-zzfbANruKznLb2p6c8zlig1VVrNoPK70RlMmauy9K4sMolrphdZq8/WdIvvtT8inCG+fBUn6K6QOYLXcEWGoBg==
+stylelint@13.5.0:
+  version "13.5.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.5.0.tgz#9edbf90c8c02c47fd0c4818376e3799145f22cab"
+  integrity sha512-+Jy7ieKAWKTf2tmcAE7jgScxH39Urb87i0bjK/enScFaGWWaFn4kAPwepGOSk2b7CLUDVt/O6kwA0x0p/V7moQ==
   dependencies:
     "@stylelint/postcss-css-in-js" "^0.37.1"
     "@stylelint/postcss-markdown" "^0.36.1"
