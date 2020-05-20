@@ -1295,10 +1295,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bigpopakap/eslint-config@1.1.84":
-  version "1.1.84"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.84.tgz#73f94f40e638a610077988cf14d0a4538e646042"
-  integrity sha512-80YN8edKshEHpXFPshIO0glFPEGKv+O1nxS/B2gXV0CsqGvbSxj9Ecd/rrSVEuIOVn7xMAn7AgQLZ8iYGG3DEQ==
+"@bigpopakap/eslint-config@1.1.85":
+  version "1.1.85"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.85.tgz#7b812128f396afc9fb9db984b2f45879db518824"
+  integrity sha512-Oo8Z/D547tIWsakLrOrLYgUE+jL24rsIO6/y+5dR8f7Y4xR9i6MhKSOp+g+c/6TYy30OjPwE0boHsaFH/nCtGQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.34.0"
     "@typescript-eslint/parser" "2.34.0"
@@ -1322,7 +1322,7 @@
     eslint-plugin-typescript "0.14.0"
     prettier "1.19.1"
     shelljs "0.8.4"
-    typescript "3.9.2"
+    typescript "3.9.3"
     yargs "15.3.1"
 
 "@bigpopakap/stylelint-config@1.0.26":
@@ -12838,11 +12838,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typescript@3.9.2:
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.2.tgz#64e9c8e9be6ea583c54607677dd4680a1cf35db9"
-  integrity sha512-q2ktq4n/uLuNNShyayit+DTobV2ApPEo/6so68JaD5ojvc/6GClBipedB9zNWYxRSAlZXAe405Rlijzl6qDiSw==
 
 typescript@3.9.3:
   version "3.9.3"
