@@ -24,6 +24,6 @@
   "devDependencies": {
     "@bigpopakap/eslint-config": "1.1.91",
     "npm-watch": "0.6.0",
-    "typescript": "3.9.3"
+    "typescript": "3.9.5"
   }
 }
