@@ -1310,10 +1310,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bigpopakap/eslint-config@1.1.101":
-  version "1.1.101"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.101.tgz#a56b4c9746bec4915d70222ad1fc24cc05e4894e"
-  integrity sha512-9om6Xd6/HXEYjZLfJkQkRUl4NSotbSpc2MdUWfaOT8pcjCVH4590e/vypjW6g3CEoErjOrxGBTvBVK3Gd1iRiA==
+"@bigpopakap/eslint-config@1.1.102":
+  version "1.1.102"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.102.tgz#4d232f993d265bc56fd0bdaf76c035e88eeb71e8"
+  integrity sha512-CZv091QU0A8XRP530mvEsxLni6UWK1rLxLpzaMidc0fbvHXxIOGKyfuolbAbgSmCvbG9iOIJHBvmRVkOAglbtQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.34.0"
     "@typescript-eslint/parser" "3.4.0"
@@ -1327,7 +1327,7 @@
     eslint-plugin-eslint-comments "3.2.0"
     eslint-plugin-filenames "1.3.2"
     eslint-plugin-flowtype "4.7.0"
-    eslint-plugin-import "2.21.2"
+    eslint-plugin-import "2.22.0"
     eslint-plugin-json "2.1.1"
     eslint-plugin-jsx-a11y "6.3.1"
     eslint-plugin-node "11.1.0"
@@ -5175,10 +5175,10 @@ eslint-plugin-import@2.20.1:
     read-pkg-up "^2.0.0"
     resolve "^1.12.0"
 
-eslint-plugin-import@2.21.2:
-  version "2.21.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.21.2.tgz#8fef77475cc5510801bedc95f84b932f7f334a7c"
-  integrity sha512-FEmxeGI6yaz+SnEB6YgNHlQK1Bs2DKLM+YF+vuTk5H8J9CLbJLtlPvRFgZZ2+sXiKAlN5dpdlrWOjK8ZoZJpQA==
+eslint-plugin-import@2.22.0:
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.22.0.tgz#92f7736fe1fde3e2de77623c838dd992ff5ffb7e"
+  integrity sha512-66Fpf1Ln6aIS5Gr/55ts19eUuoDhAbZgnr6UxK5hbDx6l/QgQgx61AePq+BV4PP2uXQFClgMVzep5zZ94qqsxg==
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flat "^1.2.3"
