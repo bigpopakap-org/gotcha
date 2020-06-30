@@ -1310,10 +1310,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bigpopakap/eslint-config@1.1.106":
-  version "1.1.106"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.106.tgz#48e51446822e38b461d3c11931229cac66ad69dc"
-  integrity sha512-FxzYiHX+1WT8XgM27vsrDLZCJ4k80wEWUmcPyk3yA1BIyvjQpx55thEf+K7GJxJAQDzVbMwrCCBz6IV7Bc6zjw==
+"@bigpopakap/eslint-config@1.1.107":
+  version "1.1.107"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.107.tgz#fad3f032053d894c48a4bcfdf51460308433ffb7"
+  integrity sha512-iwd4XRvBvhoWvZhueQiVvIA4jiGjmgCAC6tGHV17+YS6+HfoHdYX+QJ8TIW9AM3Kab0v9fb9bJ26oyaa1ka0nA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.34.0"
     "@typescript-eslint/parser" "3.5.0"
@@ -1332,7 +1332,7 @@
     eslint-plugin-jsx-a11y "6.3.1"
     eslint-plugin-node "11.1.0"
     eslint-plugin-prettier "3.1.4"
-    eslint-plugin-react "7.20.2"
+    eslint-plugin-react "7.20.3"
     eslint-plugin-react-hooks "4.0.5"
     eslint-plugin-typescript "0.14.0"
     prettier "1.19.1"
@@ -5340,10 +5340,10 @@ eslint-plugin-react@7.19.0:
     string.prototype.matchall "^4.0.2"
     xregexp "^4.3.0"
 
-eslint-plugin-react@7.20.2:
-  version "7.20.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.2.tgz#b0d72abcd94c59c842338aa09c800808219ea77d"
-  integrity sha512-J3BdtsPNbcF/CG9HdyLx7jEtC7tuODODGldkS9P1zU2WMoHPdcsN2enUopgIaec5f9eYhSFI5zQAaWA/dgv2zw==
+eslint-plugin-react@7.20.3:
+  version "7.20.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.3.tgz#0590525e7eb83890ce71f73c2cf836284ad8c2f1"
+  integrity sha512-txbo090buDeyV0ugF3YMWrzLIUqpYTsWSDZV9xLSmExE1P/Kmgg9++PD931r+KEWS66O1c9R4srLVVHmeHpoAg==
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flatmap "^1.2.3"
