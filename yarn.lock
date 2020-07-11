@@ -1340,16 +1340,16 @@
     typescript "3.9.6"
     yargs "15.4.1"
 
-"@bigpopakap/stylelint-config@1.0.30":
-  version "1.0.30"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/stylelint-config/-/stylelint-config-1.0.30.tgz#9f500d74e2a16177bad510d8febdfef4f1dcfe4d"
-  integrity sha512-DBpIJNhJdm0vU+i86+ZQDdMom3jiPwj6Fo/gdTPw/5X+9vjFWVP79LxSEL7qdJH9j1AjzKScBXj0/Z2fyn/FaQ==
+"@bigpopakap/stylelint-config@1.0.31":
+  version "1.0.31"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/stylelint-config/-/stylelint-config-1.0.31.tgz#d254b134c2744d16f7d112e2c272c47e5cfa6692"
+  integrity sha512-GcBgdGIhYL/X1neyeko5N3+DCzxFYofGQ5PwCFHwBqFlOO+EB+cyk0DYhDtUjIC+KHumfcQQSHq1V9GyghgUSQ==
   dependencies:
     stylelint "13.6.1"
     stylelint-config-standard "20.0.0"
     stylelint-config-styled-components "0.1.1"
     stylelint-order "4.1.0"
-    yargs "15.4.0"
+    yargs "15.4.1"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
@@ -4518,13 +4518,6 @@ decamelize@^1.1.0, decamelize@^1.1.2, decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
-
-decamelize@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-3.2.0.tgz#84b8e8f4f8c579f938e35e2cc7024907e0090851"
-  integrity sha512-4TgkVUsmmu7oCSyGBm5FvfMoACuoh9EOidm7V5/J2X2djAwwt57qb3F2KMP2ITqODTCSwb+YRV+0Zqrv18k/hw==
-  dependencies:
-    xregexp "^4.2.4"
 
 decode-uri-component@^0.2.0:
   version "0.2.0"
@@ -14009,7 +14002,7 @@ xmlchars@^2.1.1:
   version "1.5.0"
   resolved "https://github.com/LearnBoost/node-XMLHttpRequest/archive/0f36d0b5ebc03d85f860d42a64ae9791e1daa433.tar.gz#0f5d53139bb6b763ef5ca92565262b9f9b2087b9"
 
-xregexp@^4.2.4, xregexp@^4.3.0:
+xregexp@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/xregexp/-/xregexp-4.3.0.tgz#7e92e73d9174a99a59743f67a4ce879a04b5ae50"
   integrity sha512-7jXDIFXh5yJ/orPn4SXjuVrWWoi4Cr8jfV1eHv9CixKSbU+jY4mxfrBwAuDvupPNKpMUY+FeIqsVw/JLT9+B8g==
@@ -14089,23 +14082,6 @@ yargs@12.0.5:
     which-module "^2.0.0"
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^11.1.1"
-
-yargs@15.4.0:
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.4.0.tgz#53949fb768309bac1843de9b17b80051e9805ec2"
-  integrity sha512-D3fRFnZwLWp8jVAAhPZBsmeIHY8tTsb8ItV9KaAaopmC6wde2u6Yw29JBIZHXw14kgkRnYmDgmQU4FVMDlIsWw==
-  dependencies:
-    cliui "^6.0.0"
-    decamelize "^3.2.0"
-    find-up "^4.1.0"
-    get-caller-file "^2.0.1"
-    require-directory "^2.1.1"
-    require-main-filename "^2.0.0"
-    set-blocking "^2.0.0"
-    string-width "^4.2.0"
-    which-module "^2.0.0"
-    y18n "^4.0.0"
-    yargs-parser "^18.1.2"
 
 yargs@15.4.1:
   version "15.4.1"
