@@ -20,7 +20,7 @@
     "react-scripts": "3.4.1",
     "shared": "latest",
     "styled-components": "5.1.1",
-    "styled-reset": "4.2.0",
+    "styled-reset": "4.2.1",
     "typescript": "3.9.6"
   },
   "watch": {
