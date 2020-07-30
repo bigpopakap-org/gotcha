@@ -1310,10 +1310,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bigpopakap/eslint-config@1.1.121":
-  version "1.1.121"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.121.tgz#f0c076f32227d6aaafb40c8948e3e0273171fcbf"
-  integrity sha512-2/uMeg1w/hzOp4TTRNAI01D964zlXlQ8fPEmhqj/15puCgQIH/IoRmhhyYJden+HlJYSJue3kZcxJ07sAoTPmA==
+"@bigpopakap/eslint-config@1.1.122":
+  version "1.1.122"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.122.tgz#0034bfbe2f4bf35c673a13f226d7b7ebe949810e"
+  integrity sha512-y2f4R7DVYwzWbJtmQDZGcnrQt9CIs5C0YrKLPm94kFN7UtLh5xmotVoD38oEIHtMZNcinzq/t7q4hsXHxTSUAQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.34.0"
     "@typescript-eslint/parser" "3.7.1"
@@ -1321,7 +1321,7 @@
     eslint "6.8.0"
     eslint-config-prettier "6.11.0"
     eslint-config-react-app "5.2.1"
-    eslint-import-resolver-typescript "2.0.0"
+    eslint-import-resolver-typescript "2.1.0"
     eslint-plugin-absolute-import "1.4.4"
     eslint-plugin-css-modules "2.11.0"
     eslint-plugin-eslint-comments "3.2.0"
@@ -5095,15 +5095,15 @@ eslint-import-resolver-node@^0.3.1, eslint-import-resolver-node@^0.3.2, eslint-i
     debug "^2.6.9"
     resolve "^1.13.1"
 
-eslint-import-resolver-typescript@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-2.0.0.tgz#e95f126cc12d3018b9cc11692b4dbfd3e17d3ea6"
-  integrity sha512-bT5Frpl8UWoHBtY25vKUOMoVIMlJQOMefHLyQ4Tz3MQpIZ2N6yYKEEIHMo38bszBNUuMBW6M3+5JNYxeiGFH4w==
+eslint-import-resolver-typescript@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-2.1.0.tgz#dc19a289fd7ddb0a38dcdab2a965630d1fb88aa7"
+  integrity sha512-sWpQYfW9zL2T11kEVRY8extXS6xAw+Fzh8qouwxDxDKhv2IOYpf6jXNJ+vqudptRqO9QwXoISLoMvb9YoVWELA==
   dependencies:
     debug "^4.1.1"
+    glob "^7.1.6"
     is-glob "^4.0.1"
-    resolve "^1.12.0"
-    tiny-glob "^0.2.6"
+    resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
 eslint-loader@3.0.3:
@@ -6233,11 +6233,6 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
-globalyzer@^0.1.0:
-  version "0.1.4"
-  resolved "https://registry.npmjs.org/globalyzer/-/globalyzer-0.1.4.tgz#bc8e273afe1ac7c24eea8def5b802340c5cc534f"
-  integrity sha512-LeguVWaxgHN0MNbWC6YljNMzHkrCny9fzjmEUdnF1kQ7wATFD1RHFRqA1qxaX2tgxGENlcxjOflopBwj3YZiXA==
-
 globby@8.0.2:
   version "8.0.2"
   resolved "https://registry.npmjs.org/globby/-/globby-8.0.2.tgz#5697619ccd95c5275dbb2d6faa42087c1a941d8d"
@@ -6278,11 +6273,6 @@ globjoin@^0.1.4:
   version "0.1.4"
   resolved "https://registry.npmjs.org/globjoin/-/globjoin-0.1.4.tgz#2f4494ac8919e3767c5cbb691e9f463324285d43"
   integrity sha1-L0SUrIkZ43Z8XLtpHp9GMyQoXUM=
-
-globrex@^0.1.1:
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
-  integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
 gonzales-pe@^4.0.3:
   version "4.2.4"
@@ -12803,14 +12793,6 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
-
-tiny-glob@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.npmjs.org/tiny-glob/-/tiny-glob-0.2.6.tgz#9e056e169d9788fe8a734dfa1ff02e9b92ed7eda"
-  integrity sha512-A7ewMqPu1B5PWwC3m7KVgAu96Ch5LA0w4SnEN/LbDREj/gAD0nPWboRbn8YoP9ISZXqeNAlMvKSKoEuhcfK3Pw==
-  dependencies:
-    globalyzer "^0.1.0"
-    globrex "^0.1.1"
 
 tinycolor@0.x:
   version "0.0.1"
