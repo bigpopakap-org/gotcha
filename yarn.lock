@@ -1310,10 +1310,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bigpopakap/eslint-config@1.1.122":
-  version "1.1.122"
-  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.122.tgz#0034bfbe2f4bf35c673a13f226d7b7ebe949810e"
-  integrity sha512-y2f4R7DVYwzWbJtmQDZGcnrQt9CIs5C0YrKLPm94kFN7UtLh5xmotVoD38oEIHtMZNcinzq/t7q4hsXHxTSUAQ==
+"@bigpopakap/eslint-config@1.1.123":
+  version "1.1.123"
+  resolved "https://registry.yarnpkg.com/@bigpopakap/eslint-config/-/eslint-config-1.1.123.tgz#8758700e30ecc56f4e2b7faf3c89dd1bc21c5165"
+  integrity sha512-LqZVFOKjybEEpaGvXfw9TPNjUjO0fmIeW7e8eoqRc+44I+KaRXTFkldPfwL2CHd0Vx0gputYciQmlEX5IFUfLQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.34.0"
     "@typescript-eslint/parser" "3.7.1"
@@ -1321,7 +1321,7 @@
     eslint "6.8.0"
     eslint-config-prettier "6.11.0"
     eslint-config-react-app "5.2.1"
-    eslint-import-resolver-typescript "2.1.0"
+    eslint-import-resolver-typescript "2.2.0"
     eslint-plugin-absolute-import "1.4.4"
     eslint-plugin-css-modules "2.11.0"
     eslint-plugin-eslint-comments "3.2.0"
@@ -5095,10 +5095,10 @@ eslint-import-resolver-node@^0.3.1, eslint-import-resolver-node@^0.3.2, eslint-i
     debug "^2.6.9"
     resolve "^1.13.1"
 
-eslint-import-resolver-typescript@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-2.1.0.tgz#dc19a289fd7ddb0a38dcdab2a965630d1fb88aa7"
-  integrity sha512-sWpQYfW9zL2T11kEVRY8extXS6xAw+Fzh8qouwxDxDKhv2IOYpf6jXNJ+vqudptRqO9QwXoISLoMvb9YoVWELA==
+eslint-import-resolver-typescript@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-2.2.0.tgz#f7b261e41a38b690f3044660f6d496cc312323b0"
+  integrity sha512-/NhKEH1gbRlcb9RcaZJe5zRn5eIffGTf1qh3JAyvkEuPli3DEa5HQWWUO5OTfUjj7buUXsDq8lEsdwbbSeqywg==
   dependencies:
     debug "^4.1.1"
     glob "^7.1.6"
