@@ -22,7 +22,7 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@bigpopakap/eslint-config": "1.1.127",
+    "@bigpopakap/eslint-config": "1.1.128",
     "npm-watch": "0.7.0",
     "typescript": "3.9.7"
   }
