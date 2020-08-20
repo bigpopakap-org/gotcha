@@ -22,7 +22,7 @@
     "luxon": "1.24.1",
     "path": "0.12.7",
     "shared": "latest",
-    "ts-node-dev": "1.0.0-pre.58",
+    "ts-node-dev": "1.0.0-pre.59",
     "typescript": "3.9.7"
   },
   "dependencies": {
