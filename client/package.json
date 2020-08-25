@@ -11,7 +11,7 @@
     "@bigpopakap/stylelint-config": "1.0.31",
     "@types/jest": "26.0.10",
     "@types/node": "12.12.31",
-    "@types/react": "16.9.46",
+    "@types/react": "16.9.47",
     "@types/react-dom": "16.9.5",
     "@types/styled-components": "5.1.2",
     "npm-watch": "0.7.0",
