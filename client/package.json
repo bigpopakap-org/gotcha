@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@bigpopakap/eslint-config": "1.1.133",
-    "@bigpopakap/stylelint-config": "1.0.31",
+    "@bigpopakap/stylelint-config": "1.0.32",
     "@types/jest": "26.0.10",
     "@types/node": "12.12.31",
     "@types/react": "16.9.48",
