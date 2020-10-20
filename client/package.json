@@ -12,7 +12,7 @@
     "@types/jest": "26.0.15",
     "@types/node": "12.12.31",
     "@types/react": "16.9.53",
-    "@types/react-dom": "16.9.5",
+    "@types/react-dom": "16.9.8",
     "@types/styled-components": "5.1.4",
     "npm-watch": "0.7.0",
     "react": "16.14.0",
