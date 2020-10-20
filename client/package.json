@@ -7,7 +7,7 @@
     "node": ">=12.12"
   },
   "devDependencies": {
-    "@bigpopakap/eslint-config": "1.1.133",
+    "@bigpopakap/eslint-config": "1.1.153",
     "@bigpopakap/stylelint-config": "1.0.35",
     "@types/jest": "26.0.15",
     "@types/node": "12.12.31",
