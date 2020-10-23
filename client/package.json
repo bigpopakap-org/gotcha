@@ -17,7 +17,7 @@
     "npm-watch": "0.7.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "react-scripts": "3.4.4",
+    "react-scripts": "4.0.0",
     "shared": "latest",
     "styled-components": "5.2.0",
     "styled-reset": "4.2.3",
